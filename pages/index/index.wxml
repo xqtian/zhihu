@@ -1,0 +1,51 @@
+<!--index.wxml-->
+
+<block>
+  <view class='index'>
+    <view class='search flex-wrap'>
+      <view class='search-left flex-item' >
+        <view class='flex-wrap'>
+          <view class='flex1'>
+            <text class='iconfont icon-sousuo'></text>
+          </view>
+          <view class='flex6'>
+            <input type='text' placeholder="搜索话题，问题或人" placeholder-class="search-placeholder" />
+          </view>
+        </view>
+      </view>
+      <view class='search-right flex-item'>
+        <text class="iconfont icon-lightningshandian" bindtap="updateList"></text>
+      </view>
+    </view>
+    <scroll-view 
+      class='container' 
+      style="height: 300px"
+      scroll-y="true"
+      scroll-with-animation="{{true}}"
+      scroll-top="90" 
+      lower-threshold="10" 
+      upper-threshold="10" 
+      bindscrolltoupper="updateList" 
+      bindscrolltolower="appendNextPageList">
+      <block>
+        <block wx:if="{{loading}}">
+            <view class="txcenter">加载中</view>
+        </block>
+        <block wx:else>
+            <feed 
+              wx:for="{{dataList}}"
+              wx:for-index="idx" 
+              wx:for-item="item" 
+              feed_source_img="{{item.feed_source_img}}"
+              feed_source_name="{{item.feed_source_name}}" 
+              feed_source_txt="{{item.feed_source_txt}}"
+              question="{{item.question}}" 
+              answer_ctnt="{{item.answer_ctnt}}" 
+              good_num="{{item.good_num}}"
+              comment_num="{{item.comment_num}}" >
+            </feed>
+        </block>
+      </block>
+    </scroll-view>
+  </view>
+</block>

@@ -1,0 +1,73 @@
+<!--pages/userinfo/userinfo.wxml-->
+<block>
+    <view class="more">
+        <view class="user flex-wrap">
+            <view class="avatar flex-item">
+                <image class="userinfo-avatar" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1536927744108&di=78c48d96604beedf46cff29c628da730&imgtype=0&src=http%3A%2F%2Fimg0.pconline.com.cn%2Fpconline%2F1312%2F28%2F4079536_18-023955_792_thumb.jpg"
+                background-size="cover" />
+            </view>
+            <view class="user-info flex-item">
+                <text class="userinfo-nickname">情儿</text>
+                <text class="edit">查看或编辑个人主页</text>
+            </view>
+        </view>
+        <view class="my">
+            <view class="my-item flex-wrap">
+                <view class="myitem-icon flex-item">
+                    <text class="iconfont icon-ai-eye"></text>
+                </view>
+                <view class="myitem-name flex-item">
+                    <text>我的关注</text>
+                </view>
+            </view>
+            <view class="my-item flex-wrap">
+                <view class="myitem-icon flex-item">
+                    <text class="iconfont icon-xingxing"></text>
+                </view>
+                <view class="myitem-name flex-item">
+                    <text>我的收藏</text>
+                </view>
+            </view>
+            <view class="my-item flex-wrap">
+                <view class="myitem-icon flex-item">
+                    <text class="iconfont icon-icon--"></text>
+                </view>
+                <view class="myitem-name flex-item">
+                    <text>我的草稿</text>
+                </view>
+            </view>
+            <view class="my-item flex-wrap">
+                <view class="myitem-icon flex-item">
+                    <text class="iconfont icon-biao"></text>
+                </view>
+                <view class="myitem-name flex-item">
+                    <text>最近浏览</text>
+                </view>
+            </view>
+            <view class="my-item flex-wrap">
+                <view class="myitem-icon flex-item">
+                    <text class="iconfont icon-ai-book"></text>
+                </view>
+                <view class="myitem-name flex-item">
+                    <text>我的书架</text>
+                </view>
+            </view>
+            <view class="my-item flex-wrap">
+                <view class="myitem-icon flex-item">
+                    <image class="myitem-img" src="../../asset/images/live.png" />
+                </view>
+                <view class="myitem-name flex-item">
+                    <text>我的 Live</text>
+                </view>
+            </view>
+            <view class="my-item flex-wrap">
+                <view class="myitem-icon flex-item">
+                    <image class="myitem-img" src="../../asset/images/zhi.png" />
+                </view>
+                <view class="myitem-name flex-item">
+                    <text>我的值乎</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>
